@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exibir e esconder com jquery</title>
+    <script src="./jquery-3.7.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+        $("#mostrar").click(function(){
+            $("img").show();
+        })
+        $("#esconder").click(function(){
+            $("img").hide();
+        })
+
+        })
+    </script>
+    <style>
+        div{
+            width: 500px;
+        }
+        img{
+            width: 500px;
+        }
+        .center{
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+        }
+        button{
+            margin-top: 10px;
+            padding: 5px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-weight: bold;
+            cursor: pointer;
+            background-color: transparent;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="./Captura de tela de 2024-04-15 11-54-02.png">
+        <br>
+        <div class="center">
+            <button id="mostrar">Mostrar</button>
+            <button id="esconder">Esconder</button>
+        </div>
+    </div>
+</body>
+</html>
